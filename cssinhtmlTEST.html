@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Test page</title>
+        <style type="text/css">
+            header, aside, main, footer {
+                text-align: center;
+            }
+            header {
+                background-color: gray; 
+                width: 900px; 
+                height: 100px;  
+                padding-top: 30px; 
+                margin: 10px auto;
+            }
+            div {
+                width: 900px; 
+                margin: 10px auto;
+            }
+            aside {
+                background-color: yellow; 
+                height: 300px;  
+                padding-top: 30px; 
+                width: 300px; 
+                float: left;
+            }
+            main {
+                background-color: darkgrey; 
+                height: 300px;  
+                padding-top: 30px;
+            }
+            footer {
+                background-color: pink; 
+                width: 900px; 
+                height: 100px;  
+                padding-top: 30px; 
+                margin: 10px auto;
+            }
+            #im_id {
+                color: red;
+            }
+            .im_class {
+                color: white;
+            }
+            p {
+                color: aqua;
+            }
+            * {
+                font-size: 15px;
+            }
+            input[type="text"] {
+                background-color: black;
+            }
+            p::first-letter {
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <header>Some header</header>
+        <div>
+            <aside>Some left sidebar</aside>
+            <main>
+                <p id="im_id">Paragraph</p>
+                <p class="im_class">Paragraph</p>
+                <p class="im_class">Paragraph</p>
+                <p>Paragraph</p>
+                <p>Paragraph</p>
+                <p>Paragraph</p>
+
+                <input type="text">
+                <input type="number">
+            </main>
+        </div>
+        <footer>Some footer</footer>
+
+    </body>
+</html>
