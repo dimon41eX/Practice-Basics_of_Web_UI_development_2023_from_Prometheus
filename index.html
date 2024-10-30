@@ -3,49 +3,53 @@
 <head>
     <title>My page</title>
     <meta charset="UTF-8">
+    <!-- Normalize подстраивает стили всех дефолтных элементов под 1 стиль во всех браузерах -->
     <link rel="stylesheet" type="text/css" href="/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body>
+    <!-- Header -->
     <header class="header">
         <div class="container">
             <h1>Main Header Here</h1>
             <h2><small>And small sub header</small></h2>
         </div>        
     </header>
-    <nav>
-        <div>
+    <!-- Navigation -->
+    <nav class="page-navigation">
+        <div class="container">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contacts</a></li>
             </ul>
             <!--Login form-->
-            <form action="#">
+            <form action="#" class="login">
                 <input type="text" placeholder="Login" required>
                 <input type="password" placeholder="Password" required>
                 <input type="submit" value="Sign In">
             </form>
         </div>
     </nav>
+    <!-- Main contant -->
     <main>
-        <div>
-            <h2>Image Collection <small>Visualize Quality</small></h2>
-            <div>
-                <div>
-                    <div>
-                        <img src="images/beautiful-blooming-flowers-spring-season_23-2150790288.avif" alt="List picture" width="300">
-                        <div>
-                            <h3>List element item</h3>
+        <div class="container">
+            <h2 class="collection-title">Image Collection <small>Visualize Quality</small></h2>
+            <div class="collections">
+                <div class="collection-item-outer">
+                    <div class="collection-item">
+                        <img src="images/beautiful-blooming-flowers-spring-season_23-2150790288.avif" alt="List picture">
+                        <div class="collection-text">
+                            <h3>List element itemList element item</h3>
                             <p>Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text</p>
                             <button>Read More...</button>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <div>
-                        <img src="images/beautiful-blooming-flowers-spring-season_23-2150790288.avif" alt="List picture" width="300">
-                        <div>
+                <div class="collection-item-outer">
+                    <div class="collection-item">
+                        <img src="images/beautiful-blooming-flowers-spring-season_23-2150790288.avif" alt="List picture">
+                        <div class="collection-text">
                             <h3>List element item</h3>
                             <p>Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some
                                 text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text
@@ -57,47 +61,47 @@
                         </div>
                     </div>
                 </div>
-                <div>
-                    <div>
-                        <img src="images/beautiful-blooming-flowers-spring-season_23-2150790288.avif" alt="List picture" width="300">
-                        <div>
+                <div class="collection-item-outer">
+                    <div class="collection-item">
+                        <img src="images/beautiful-blooming-flowers-spring-season_23-2150790288.avif" alt="List picture">
+                        <div class="collection-text">
                             <h3>List element item</h3>
                             <p>Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some
-                                text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text
-                                Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some
-                                text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text
-                                Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some
-                                text Some text Some text Some text</p>
+                            text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text
+                            Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some
+                            text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text
+                            Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some
+                            text Some text Some text Some text</p>
                             <button>Read More...</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <h2>Video Collection <small>Visualize Quality</small></h2>
-            <div>
-                <div>
-                    <div>
-                        <video controls width="300">
+            <h2 class="collection-title">Video Collection <small>Visualize Quality</small></h2>
+            <div class="collections">
+                <div class="collection-item-outer">
+                    <div class="collection-item">
+                        <video controls>
                             <source src="/video/IMG_1797.MOV" type="video/mp4">
                         </video>
-                        <div>
+                        <div class="collection-text">
                             <h3>List element item</h3>
-                            <p>Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text
-                                Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text
-                                Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text
-                                Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text
-                                Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text
-                                Some text Some text Some text Some text Some text Some text</p>
+                            <p>Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some
+                            text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text
+                            Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some
+                            text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text
+                            Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some
+                            text Some text Some text Some text</p>
                             <button>Read More...</button>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <div>
-                        <video controls width="300">
+                <div class="collection-item-outer">
+                    <div class="collection-item">
+                        <video controls>
                             <source src="/video/IMG_1797.MOV" type="video/mp4">
                         </video>
-                        <div>
+                        <div class="collection-text">
                             <h3>List element item</h3>
                             <p>Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text
                                 Some
@@ -114,12 +118,12 @@
                         </div>
                     </div>
                 </div>
-                <div>
-                    <div>
-                        <video controls width="300">
+                <div class="collection-item-outer">
+                    <div class="collection-item">
+                        <video controls>
                             <source src="/video/IMG_1797.MOV" type="video/mp4">
                         </video>
-                        <div>
+                        <div class="collection-text">
                             <h3>List element item</h3>
                             <p>Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text
                                 Some
@@ -140,8 +144,8 @@
 
         </div>
     </main>
-    <footer>
-        <div>
+    <footer class="footer">
+        <div class="container">
             <p>Copyright blablabla 2024</p>
         </div>
     </footer>
