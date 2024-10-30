@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flex Box</title>
+    <style type="text/css">
+        .container {
+            background-color: yellow;
+            position: relative;
+            border: 3px solid black;
+            display: flex;
+        }
+        .container_item {
+            background-color: aqua;
+            width: 150px;
+            margin: 10px;
+            border: 3px solid black;
+            text-align: center;
+            color: blueviolet;
+        }
+        .item1 {
+            min-height: 50px;
+        } 
+        .item2 {
+            min-height: 100px;
+        }
+        .item3 {
+            min-height: 200px;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="container_item item1">Flex Box Item 1 </div>
+        <div class="container_item item2">Flex Box Item 2 </div>
+        <div class="container_item item3">Flex Box Item 3 </div>
+    </div>
+
+</body>
+
+</html>
